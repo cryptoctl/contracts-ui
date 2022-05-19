@@ -67,13 +67,10 @@ jobs:
 
       - run: chmod +x ./substrate-contracts-node
 
-      - name: Start local node
-        run: ./substrate-contracts-node --dev > /dev/null 2>&1
-
       - name: 'UI Tests - Chrome'
         uses: cypress-io/github-action@v2
         with:
-          start: yarn start
+          start: ./substrate-contracts-node --dev > /dev/null 2>&1 && yarn start
           wait-on: 'http://localhost:8081'
           wait-on-timeout: 120
           browser: chrome
