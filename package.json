@@ -32,7 +32,7 @@
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^1.0.6",
     "@polkadot/api": "9.10.2",
-    "@polkadot/api-contract": "9.10.2",
+    "@polkadot/api-contract": "9.10.4",
     "@polkadot/extension-dapp": "^0.44.6",
     "@polkadot/ui-keyring": "^2.9.14",
     "@polkadot/ui-shared": "^2.9.14",
